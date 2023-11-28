@@ -1,0 +1,387 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+:root {
+  --color-primary: #ed4d1b;
+  --color-secondary: #F2C029;
+  --color-light-orange: #F2D06B;
+  --color-black: #000;
+  --color-white: #fff;
+  --color-black_grey: #262626;
+  --color-neutral-0: #0e0c0c;
+  --color-neutral-10: #171717;
+  --color-neutral-30: #a8a29e;
+  --color-neutral-40: #f5f5f5;
+}
+
+body {
+  background-color: rgb(231, 230, 230);
+}
+
+#aprovados {
+  display: flex;
+  align-items: center;
+  margin-left: 50rem;
+  margin-bottom: 5rem;
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+#blacklogo {
+  position: absolute;
+  height: 15rem;
+  cursor: pointer;
+  margin-left: 29rem;
+}
+
+#blacklogo2 {
+  position: absolute;
+  height: 15rem;
+  margin-left: 29rem;
+  border-radius: 50%;
+  height: 14rem;
+  z-index:1;
+  cursor: pointer;  
+}
+
+#blacklogo2:hover {
+  opacity: 0;
+}
+
+.iconinst {
+  width: 2.3rem;
+}
+
+.iconredes {
+  height: 2.3rem;
+}
+
+header {
+  background-color: var(--color-secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.maps {
+  background-color: var(--color-black_grey);
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+  padding: 0.8rem 6rem ;
+}
+
+.maps a {
+  color: var(--color-white);
+  font-weight: 600;
+  display: flex;  
+  display: flex;
+  align-items: center;
+  margin: 0 1rem;
+}
+
+.location {
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.icons {
+  display: flex;
+
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ahover:hover {
+  transition: background 1s;
+  color: var(--color-primary);
+  cursor: pointer;
+}
+
+.nav p {
+  margin: 0 5rem;
+}
+
+.nav a {
+  color: var(--color-white);
+  font-size: 1.5rem
+}
+
+.nav .logo{
+  height: 5rem;
+  border-radius: 50%;
+  margin: 1rem 0;
+}
+
+.cards {
+  display: flex;
+  height: 24.39rem;
+  justify-content: center;
+}
+
+.card-left {
+  background-color: var(--color-black_grey);
+  border-radius: 15px 0 0 15px;
+
+}
+.card-left .img1 {
+  width: 41.9rem;
+  border-radius: 15px;
+}
+
+.card-right {
+  color: aliceblue;
+  background-color: var(--color-black_grey);
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 0 15px 15px 0}
+
+.card-right p {
+  width: 30vw;
+  display: flex;
+  padding: 1.8rem ;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.card-right h3 {
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+} 
+
+#segmentos {
+  width: 76vw;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  gap: 0.75rem;  
+}
+
+#segmentos .imgsegmentos {
+  width: 45rem;
+  border-radius: 15px;
+}
+
+.backh2{
+  background-color: var(--color-secondary); /*perguntar o melhor pros manos*/
+  color: var(--color-black_grey);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  margin: 2.3rem 0 0.6rem 0;
+  width: 100vw;
+}
+
+.backh2 h2 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+h1 {
+  text-align: center;
+  margin: 5rem 0 3rem 0;
+}
+
+.linhacinza {
+  margin-top: 2rem;
+  padding: 8rem 0;
+  height: 5rem;
+  width: 100vw;
+  background-color: var(--color-black_grey);
+  color: var(--color-white);
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.linhacinza h2{
+  margin-bottom: 1.5rem;
+}
+
+.linhacinza .btn-wpp {
+  width: 20vw;
+  margin: auto;
+  font-weight: 700;
+}
+
+.linhacinza .btn-wpp:hover{
+  transition: background 1s;
+    background: #56d65d;
+    cursor: pointer;
+}
+
+.linhacinza .wpp{
+  width: 1.8rem;
+}
+
+.video-dimaggio .backh2{
+  margin: 0;
+}
+
+.video-dimaggio h2{
+  text-align: center;
+  margin: 3rem 0;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.video-dimaggio {
+  width: 100vw;
+  height: 38rem;
+}
+
+
+#wppfloat {
+  position: fixed;
+  width: 4rem;
+  cursor: pointer;
+  bottom: 0.63rem; 
+  right: 0.63rem;
+  display: absolute;
+}
+
+footer {
+  width: 100%;
+  color: var(--color-black);
+}
+
+.footer-link {
+  text-decoration: none;
+}
+
+#footer_content {
+  background-color: var(--color-secondary);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 3rem 3.5rem;
+}
+
+#footer_contacts h1 {
+  margin-bottom: 0.75rem;
+}
+
+#footer_social_media {
+  display: flex;
+  gap: 2rem;
+  margin-top: 1.5rem;
+} 
+
+#footer_social_media .footer-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.5rem;
+  width: 2.5rem;
+  color: var(--color-neutral-40);
+  border-radius: 50%;
+  transition: all 0.4s;
+}
+
+#footer_social_media .footer-link i {
+  font-size: 1.25rem;    
+}
+
+#footer_social_media .footer-link:hover {
+  opacity: 0.8;
+}
+
+#instagram {
+  background: linear-gradient(#7f37c9, #ff2992, #ff9807);
+}
+
+#facebook {
+  background-color: #4267b3;
+}
+
+#whatsapp {
+  background-color: #25d366;
+}
+
+.footer-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  list-style: none;
+}
+
+.footer-list .footer-link {
+  color: var(--color-neutral-30);
+  transition: all 0.4s;
+}
+
+.footer-list .footer-link:hover {
+  color: #7f37c9;
+}
+
+
+
+/*main .logo img {
+  height: 12rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  box-shadow: 0px 10px 30px #00000056;
+}*/
+
+/*_________________________________________________________________________________*/
+#doc{ 
+  padding-top: 2rem;
+  background-color: var(--color-black);
+  color: var(--color-white);
+  width: 60vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+}
+
+ol {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  line-height: 2rem;
+}
+
+
+.button-contato{
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+
+
+
+
+/*_________________________________________________________________________________*/
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 42%;
+    width: 100%;
+  }
+}
